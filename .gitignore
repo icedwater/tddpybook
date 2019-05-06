@@ -1,0 +1,14 @@
+# virtualenv
+tdd/
+
+# vim artifacts
+*.sw?
+
+# python artifacts
+*.pyc
+
+# django
+db.sqlite3
+
+# logfiles
+geckodriver.log
