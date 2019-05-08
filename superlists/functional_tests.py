@@ -1,27 +1,44 @@
 from selenium import webdriver
+import unittest
 
-# XY sets up the browser and loads the to-do list app
-browser = webdriver.Firefox()
-browser.get("http://localhost:8000")
+class NewVisitorTest(unittest.TestCase):
 
-# He checks that the page title is correct
-assert "To-Do" in browser.title
+    def setUp(self):
+        """
+        Start the browser to run tests.
+        """
+        self.browser = webdriver.Firefox()
 
-# He adds a to-do list item: "book karaoke room"
+    def tearDown(self):
+        """
+        Close the browser.
+        """
+        self.browser.quit()
 
-# XY notes that pressing enter updates the page with the item:
-# "1. book karaoke room"
+    def test_can_start_a_list_and_retrieve_it(self):
+        """
+        First test for saving a two-item list.
+        """
+        # XY sets up the browser and loads the to-do list app
+        self.browser.get("http://localhost:8000")
 
-# The text box below allows another item to be added
-# so XY adds another: "invite friends to karaoke"
+        # He checks that the page title is correct
+        self.assertIn("To-Do", self.browser.title)
+        self.fail("Finish the test.")
 
-# The page is updated with both items.
+        # He adds a to-do list item: "book karaoke room"
 
-# XY checks that the site has a custom URL for the list.
+        # XY notes that pressing enter updates the page with the item:
+        # "1. book karaoke room"
 
-# XY checks that the custom URL holds the correct list.
+        # The text box below allows another item to be added
+        # so XY adds another: "invite friends to karaoke"
 
-# OK, time to do other stuff.
-browser.quit()
+        # The page is updated with both items.
 
+        # XY checks that the site has a custom URL for the list.
 
+        # XY checks that the custom URL holds the correct list.
+
+if __name__ == "__main__":
+    unittest.main()  # warnings=ignore argument no longer needed
