@@ -39,4 +39,11 @@ The book doesn't recommend virtualenv, but I used one from the get-go. The
 directory for the virtualenv wasn't added to the git repo, so you can work
 without it.
 
+## Reference Code
+
+Percival points to the [reference source code][hjpw] at the end of Chapter
+4, so you can pick it up from there; `$URL/tree/chapter_03` is the code in
+Chapter 3, and so on.
+
+[hjpw]:https://github.com/hjpw/book-example
 [gecko]:https://github.com/mozilla/geckodriver/releases
