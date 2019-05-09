@@ -44,7 +44,8 @@ class NewVisitorTest(unittest.TestCase):
         table = self.browser.find_element_by_id("to_do_list")
         rows = table.find_elements_by_tag_name("tr")
         self.assertTrue(
-                any(row.text == "1: book karaoke room" for row in rows)
+                any(row.text == "1: book karaoke room" for row in rows),
+                "Did not find '1: book karaoke room' in table."
         )
 
         # The text box below allows another item to be added
@@ -56,7 +57,8 @@ class NewVisitorTest(unittest.TestCase):
         table = self.browser.find_element_by_id("to_do_list")
         rows = table.find_elements_by_tag_name("tr")
         self.assertTrue(
-                any(row.text == "2: invite friends to karaoke" for row in rows)
+                any(row.text == "2: invite friends to karaoke" for row in rows),
+                "Did not find '2: invite friends to karaoke' in table."
         )
 
         # XY checks that the site has a custom URL for the list.
