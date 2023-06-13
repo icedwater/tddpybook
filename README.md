@@ -9,29 +9,31 @@ the performance. But well.
 
 ## Prerequisites
 
-I borrowed the 1st edition, revision 3 (dated 2014-09-19). At the time the
+I borrowed the 2nd edition, release 1 (dated 2017-08-02). At the time the
 book was written, the following software versions were used:
 
-  - Python 3.4.0
-  - pip 3.3
-  - Django 1.7
-  - Selenium (not stated)
+  - Python 3.6.0
+  - pip (not stated)
+  - Django 1.11.3
+  - Selenium 3.4.3
   - Firefox (not stated)
+  - geckodriver 0.17.0
   - git (not stated)
 
-The versions I used on my work-through in 2019 are:
+The versions I used on resuming my work-through in 2023 are:
 
-  - Python 3.5.2
-  - pip3 19.1
-  - Django 2.2
-  - Selenium 3.141.0
-  - Firefox 66.0.3
-  - git 2.7.4
+  - Python 3.10.6
+  - pip 23.1.2
+  - Django 1.11.3 (to work through the examples)
+  - Selenium 3.4.3
+  - Firefox 114.0.1
+  - geckodriver 0.33.0
+  - git 2.34.1
 
 ## Selenium webdriver
 
 Selenium requires a webdriver for each browser it is to work with. Mozilla
-supplies one for [Firefox][gecko] on Github. I used version 0.24.0.
+supplies one for [Firefox][gecko] on Github. I used version 0.33.0.
 
 ## Exceptions
 
