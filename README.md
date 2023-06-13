@@ -1,7 +1,7 @@
 # Test-Driven Development with Python
 
 This git repo is the result of me kind of following through the TDDPY book
-written by Harry J.W. Percival (ISBN 978-1-449-36482-3). "Kind of" since I
+written by Harry J.W. Percival (ISBN 978-1-491-95870-4). "Kind of" since I
 started with a git repo first and not the prerequisites strictly in order.
 
 Also, since the versions will differ, I wonder how much these would affect
