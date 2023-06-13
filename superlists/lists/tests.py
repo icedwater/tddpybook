@@ -22,4 +22,4 @@ class HomePageTest(TestCase):
         self.assertIn("<body>", html)
         self.assertIn("<title>To-Do lists</title>", html)
         self.assertIn("</body>", html)
-        self.assertTrue(html.endswith("</html>"))
+        self.assertTrue(html.strip().endswith("</html>"))
