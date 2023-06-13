@@ -24,7 +24,7 @@ The versions I used on resuming my work-through in 2023 are:
 
   - Python 3.10.6
   - pip 23.1.2
-  - Django 1.11.3 (to work through the examples)
+  - Django 4.2.2
   - Selenium 3.4.3
   - Firefox 114.0.1
   - geckodriver 0.33.0
